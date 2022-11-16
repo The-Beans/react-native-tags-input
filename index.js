@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {
   Text,
   View,
@@ -7,7 +6,6 @@ import {
   StyleSheet,
   Image,
   TouchableOpacity,
-  ViewPropTypes
 } from 'react-native';
 
 class Tags extends React.Component {
@@ -222,26 +220,6 @@ class Tags extends React.Component {
   );
   }
 }
-
-Tags.propTypes = {
-  disabled: PropTypes.bool,
-  leftElement: PropTypes.element,
-  rightElement: PropTypes.element,
-  customElement: PropTypes.element,
-  label: PropTypes.string,
-  tags: PropTypes.object,
-  updateState: PropTypes.func,
-  keysForTag: PropTypes.string,
-  keysForTagsArray: PropTypes.arrayOf(PropTypes.string),
-  containerStyle: ViewPropTypes.style,
-  inputContainerStyle: ViewPropTypes.style,
-  inputStyle: TextInput.propTypes.style,
-  disabledInputStyle: ViewPropTypes.style,
-  leftElementContainerStyle: ViewPropTypes.style,
-  rightElementContainerStyle: ViewPropTypes.style,
-  labelStyle: Text.propTypes.style,
-  deleteIconStyles: ViewPropTypes.style,
-};
 
 const styles = {
   container: {
